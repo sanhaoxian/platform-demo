@@ -33,6 +33,7 @@ module.exports = {
 		// 多入口文件
 		index: './src/pages/index/index.js',
 		login: './src/pages/login/index.js',
+		three: './src/pages/three/index.js'
 	},
 	module: {
 		rules: [...rules]
@@ -87,6 +88,11 @@ const htmlArray = [{
 		_html: 'login',
 		title: '登录',
 		chunks: ['login']
+	},
+	{
+		_html: 'three',
+		title: 'threejs',
+		chunks: ['three']
 	},
 ];
 
