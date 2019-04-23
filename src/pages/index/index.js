@@ -1,6 +1,8 @@
 import "./index.scss";
 let tabUI = require("../../js/tab");
-console.log('121');
+if (process.env.NODE_ENV !== 'production') {
+	require('./index.html')
+}
 tabUI.init();
 tabUI.tab($(".tab-wrap2"), {
 	autoPlay: 2000,

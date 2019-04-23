@@ -48,7 +48,8 @@ const rules = [{
 	{
 		test: /\.html$/,
 		// html中的img标签
-		use: ["html-withimg-loader"]
+		// use: ["html-withimg-loader"]
+		loader: 'raw-loader'
 	}, {
 		test: /\.less$/,
 		// 三个loader的顺序不能变

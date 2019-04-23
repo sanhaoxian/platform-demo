@@ -33,7 +33,7 @@ module.exports = {
 		// 多入口文件
 		index: './src/pages/index/index.js',
 		login: './src/pages/login/index.js',
-		three: './src/pages/three/index.js'
+		// three: './src/pages/three/index.js'
 	},
 	module: {
 		rules: [...rules]
