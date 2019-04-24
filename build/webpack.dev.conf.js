@@ -15,13 +15,13 @@ const webpackConfigDev = {
 	devtool: 'inline-source-map',
 	devServer: {
 		contentBase: path.resolve(__dirname, '../src'),
-		publicPath:'/',
 		host: "127.0.0.1",
 		port: "8080",
+		// publicPath: '/build/',
 		// historyApiFallback: true,
 		watchContentBase: true,
-		hot: true // 开启热更新
-		// hotOnly:true
+		hot: true, // 开启热更新
+		hotOnly:true
 		// overlay: true // 浏览器页面上显示错误
 		// open: true, // 开启浏览器
 		// stats: "errors-only", //stats: "errors-only"表示只打印错误：
